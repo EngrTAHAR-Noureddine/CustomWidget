@@ -17,6 +17,12 @@
 		200EE70128B37940006B1FFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EE6D728B37939006B1FFD /* ContentView.swift */; };
 		200EE70228B37940006B1FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200EE6D828B3793F006B1FFD /* Assets.xcassets */; };
 		200EE70328B37940006B1FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200EE6D828B3793F006B1FFD /* Assets.xcassets */; };
+		200EE71E28B379A5006B1FFD /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EE71D28B379A5006B1FFD /* MyWidget.swift */; };
+		200EE72028B379A9006B1FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200EE71F28B379A9006B1FFD /* Assets.xcassets */; };
+		200EE72428B379AA006B1FFD /* MyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 200EE71628B379A4006B1FFD /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		20C4E7E528B4E2DD001E7DEB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C4E7E428B4E2DD001E7DEB /* Person.swift */; };
+		20D1B68A28B50788006DC2BC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200EE71A28B379A4006B1FFD /* SwiftUI.framework */; };
+		20D1B68D28B5078D006DC2BC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200EE71828B379A4006B1FFD /* WidgetKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,28 @@
 			remoteGlobalIDString = 200EE6E228B37940006B1FFD;
 			remoteInfo = "CustomLockScreenWidget (macOS)";
 		};
+		200EE72228B379AA006B1FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 200EE6D128B37938006B1FFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 200EE71528B379A4006B1FFD;
+			remoteInfo = MyWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		200EE72828B379AA006B1FFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				200EE72428B379AA006B1FFD /* MyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		200EE6D628B37939006B1FFD /* CustomLockScreenWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLockScreenWidgetApp.swift; sourceTree = "<group>"; };
@@ -49,6 +76,15 @@
 		200EE6F628B37940006B1FFD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		200EE6FA28B37940006B1FFD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		200EE6FC28B37940006B1FFD /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		200EE71628B379A4006B1FFD /* MyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		200EE71828B379A4006B1FFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		200EE71A28B379A4006B1FFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		200EE71D28B379A5006B1FFD /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
+		200EE71F28B379A9006B1FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		200EE72128B379A9006B1FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C4E7E228B4E28A001E7DEB /* MyWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyWidgetExtension.entitlements; sourceTree = "<group>"; };
+		20C4E7E428B4E2DD001E7DEB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		20C4E7E628B4E3BC001E7DEB /* CustomLockScreenWidget (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CustomLockScreenWidget (iOS).entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,16 +116,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		200EE71328B379A4006B1FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D1B68A28B50788006DC2BC /* SwiftUI.framework in Frameworks */,
+				20D1B68D28B5078D006DC2BC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		200EE6D028B37938006B1FFD = {
 			isa = PBXGroup;
 			children = (
+				20C4E7E628B4E3BC001E7DEB /* CustomLockScreenWidget (iOS).entitlements */,
+				20C4E7E228B4E28A001E7DEB /* MyWidgetExtension.entitlements */,
 				200EE6D528B37939006B1FFD /* Shared */,
 				200EE6E428B37940006B1FFD /* macOS */,
 				200EE6ED28B37940006B1FFD /* Tests iOS */,
 				200EE6F928B37940006B1FFD /* Tests macOS */,
+				200EE71C28B379A4006B1FFD /* MyWidget */,
+				200EE71728B379A4006B1FFD /* Frameworks */,
 				200EE6DE28B3793F006B1FFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +146,7 @@
 		200EE6D528B37939006B1FFD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				20C4E7E328B4E2CA001E7DEB /* Models */,
 				200EE6D628B37939006B1FFD /* CustomLockScreenWidgetApp.swift */,
 				200EE6D728B37939006B1FFD /* ContentView.swift */,
 				200EE6D828B3793F006B1FFD /* Assets.xcassets */,
@@ -111,6 +161,7 @@
 				200EE6E328B37940006B1FFD /* CustomLockScreenWidget.app */,
 				200EE6EA28B37940006B1FFD /* Tests iOS.xctest */,
 				200EE6F628B37940006B1FFD /* Tests macOS.xctest */,
+				200EE71628B379A4006B1FFD /* MyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +192,33 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		200EE71728B379A4006B1FFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				200EE71828B379A4006B1FFD /* WidgetKit.framework */,
+				200EE71A28B379A4006B1FFD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		200EE71C28B379A4006B1FFD /* MyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				200EE71D28B379A5006B1FFD /* MyWidget.swift */,
+				200EE71F28B379A9006B1FFD /* Assets.xcassets */,
+				200EE72128B379A9006B1FFD /* Info.plist */,
+			);
+			path = MyWidget;
+			sourceTree = "<group>";
+		};
+		20C4E7E328B4E2CA001E7DEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20C4E7E428B4E2DD001E7DEB /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,10 +229,12 @@
 				200EE6D928B3793F006B1FFD /* Sources */,
 				200EE6DA28B3793F006B1FFD /* Frameworks */,
 				200EE6DB28B3793F006B1FFD /* Resources */,
+				200EE72828B379AA006B1FFD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				200EE72328B379AA006B1FFD /* PBXTargetDependency */,
 			);
 			name = "CustomLockScreenWidget (iOS)";
 			productName = "CustomLockScreenWidget (iOS)";
@@ -214,6 +294,23 @@
 			productReference = 200EE6F628B37940006B1FFD /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		200EE71528B379A4006B1FFD /* MyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 200EE72528B379AA006B1FFD /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */;
+			buildPhases = (
+				200EE71228B379A4006B1FFD /* Sources */,
+				200EE71328B379A4006B1FFD /* Frameworks */,
+				200EE71428B379A4006B1FFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWidgetExtension;
+			productName = MyWidgetExtension;
+			productReference = 200EE71628B379A4006B1FFD /* MyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,7 +319,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					200EE6DC28B3793F006B1FFD = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -237,6 +334,9 @@
 					200EE6F528B37940006B1FFD = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 200EE6E228B37940006B1FFD;
+					};
+					200EE71528B379A4006B1FFD = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
@@ -257,6 +357,7 @@
 				200EE6E228B37940006B1FFD /* CustomLockScreenWidget (macOS) */,
 				200EE6E928B37940006B1FFD /* Tests iOS */,
 				200EE6F528B37940006B1FFD /* Tests macOS */,
+				200EE71528B379A4006B1FFD /* MyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +393,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		200EE71428B379A4006B1FFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200EE72028B379A9006B1FFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -299,6 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C4E7E528B4E2DD001E7DEB /* Person.swift in Sources */,
 				200EE70028B37940006B1FFD /* ContentView.swift in Sources */,
 				200EE6FE28B37940006B1FFD /* CustomLockScreenWidgetApp.swift in Sources */,
 			);
@@ -331,6 +441,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		200EE71228B379A4006B1FFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200EE71E28B379A5006B1FFD /* MyWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -343,6 +461,11 @@
 			isa = PBXTargetDependency;
 			target = 200EE6E228B37940006B1FFD /* CustomLockScreenWidget (macOS) */;
 			targetProxy = 200EE6F728B37940006B1FFD /* PBXContainerItemProxy */;
+		};
+		200EE72328B379AA006B1FFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 200EE71528B379A4006B1FFD /* MyWidgetExtension */;
+			targetProxy = 200EE72228B379AA006B1FFD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -380,6 +503,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -438,6 +562,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -459,8 +584,10 @@
 		200EE70728B37940006B1FFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CustomLockScreenWidget (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U74434MN38;
@@ -471,7 +598,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,8 +616,10 @@
 		200EE70828B37940006B1FFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "CustomLockScreenWidget (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U74434MN38;
@@ -501,7 +630,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,9 +652,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = U74434MN38;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -551,9 +682,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = U74434MN38;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -581,7 +714,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U74434MN38;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -601,7 +734,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U74434MN38;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Tests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,6 +753,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = U74434MN38;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -639,6 +773,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = U74434MN38;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -649,6 +784,67 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "CustomLockScreenWidget (macOS)";
+			};
+			name = Release;
+		};
+		200EE72628B379AA006B1FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U74434MN38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.CustomLockScreenWidget.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		200EE72728B379AA006B1FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U74434MN38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.CustomLockScreenWidget.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -696,6 +892,15 @@
 			buildConfigurations = (
 				200EE71028B37940006B1FFD /* Debug */,
 				200EE71128B37940006B1FFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		200EE72528B379AA006B1FFD /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				200EE72628B379AA006B1FFD /* Debug */,
+				200EE72728B379AA006B1FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
