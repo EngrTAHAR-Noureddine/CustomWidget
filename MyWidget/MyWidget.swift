@@ -94,8 +94,8 @@ struct MyWidgetEntryView : View {
         case .systemExtraLarge:
             ViewForSystemLarge(entry: entry)
     
-        case .accessoryRectangular:
-            ViewForSystemSmall(entry: entry)
+        //case .accessoryRectangular:
+            //ViewForSystemSmall(entry: entry)
        
         @unknown default:
             fatalError()
